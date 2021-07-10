@@ -1,0 +1,57 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.container{
+    background-image: url(images/skys.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    height: 700px;
+    width:100%;
+    position: relative;
+    overflow-x: hidden;
+}
+.car1{
+    width: 300px;
+    position: absolute;
+    top: 300px;
+    left: 0;
+    animation: animate 5s ease-in infinite;
+}
+.car2{
+    width: 500px;
+    position: absolute;
+    transform: rotateY(180deg);
+    right: 0;
+    bottom: 0;
+    animation: animation 5s ease-in infinite;
+}
+@keyframes animate{
+   from{
+       bottom:0;
+       left: 0;
+       transform: translateX(-3500px);
+}
+   to{
+       bottom: 0;
+       right: 0;
+      transform: translateX(1200px);
+      
+   }
+}
+
+@keyframes animation{
+    from{
+        bottom: 0;
+        right: 0;
+        transform: translateX(3500px) rotateY(180deg);
+ }
+    to{
+        bottom: 0;
+        left: 0;
+       transform: translateX(-1000px)rotateY(180deg);
+       
+    }
+ }
